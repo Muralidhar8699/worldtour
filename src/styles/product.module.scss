@@ -1,0 +1,41 @@
+@import "./mixins.scss";
+
+.container {
+  @include flexBox(row, center, start);
+  padding: 2rem;
+  width: 100%;
+  gap: 10rem;
+  .textdiv {
+    @include flexBox(column, start, start);
+    gap: 3rem;
+    & > :nth-child(1) {
+      @include semiBoldFont(3rem);
+      letter-spacing: 0.3rem;
+      user-select: none;
+    }
+    & > :nth-child(2) {
+      width: 50rem;
+      @include regularFont(1.1rem);
+      color: rgb(169, 167, 167);
+      width: 40rem;
+      user-select: none;
+    }
+  }
+  .imgdiv {
+    width: 22rem;
+    height: 27rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    .img {
+      width: 22rem;
+      height: 27rem;
+      object-fit: cover;
+      transition: 0.3s ease-in;
+      cursor: grab;
+      user-select: none;
+    }
+    & :hover {
+      transform: scale(1.1);
+    }
+  }
+}

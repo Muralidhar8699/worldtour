@@ -1,0 +1,13 @@
+@import "./mixins.scss";
+
+.name {
+  position: absolute;
+  bottom: 8%;
+  right: 2%;
+  //   writing-mode: vertical-rl;
+  //   text-orientation: mixed;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  @include semiBoldFont(1.5rem);
+  letter-spacing: 0.2rem;
+}

@@ -1,0 +1,9 @@
+@import "./mixins.scss";
+@import "./colors.scss";
+
+.container {
+  height: 100%;
+  width: 60%;
+  background-color: $backgroundColor;
+  border-radius: 0 1rem 1rem 0;
+}

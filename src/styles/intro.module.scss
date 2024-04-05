@@ -1,0 +1,17 @@
+@import "./mixins.scss";
+
+.container {
+  @include flexBox(column, start, center);
+  gap: 2rem;
+  & > :nth-child(1) {
+    @include semiBoldFont(2.7rem);
+    width: 45rem;
+    user-select: none;
+  }
+  & > :nth-child(2) {
+    width: 45rem;
+    @include regularFont(1.1rem);
+    color: rgba(205, 203, 203, 0.757);
+    user-select: none;
+  }
+}

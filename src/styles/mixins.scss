@@ -1,0 +1,32 @@
+
+@mixin flexBox($dir,$ai,$jc){
+    display: flex;
+    flex-direction: $dir;
+    align-items: $ai;
+    justify-content: $jc;
+} 
+@mixin thinFont($fs){
+    font-size: $fs;
+    font-weight: 100;
+    font-family: 'Robot',sans-serif;
+}
+@mixin lightFont($fs){
+    font-size: $fs;
+    font-weight: 300;
+    font-family: 'Robot',sans-serif;
+}
+@mixin regularFont($fs){
+    font-size: $fs;
+    font-weight: 400;
+    font-family: 'Robot',sans-serif;
+}
+@mixin semiBoldFont($fs){
+    font-size: $fs;
+    font-weight: 500;
+    font-family: 'Robot',sans-serif;
+}
+@mixin boldFont($fs){
+    font-size: $fs;
+    font-weight: 700;
+    font-family: 'Robot',sans-serif;
+}
